@@ -8,6 +8,32 @@
             Text="Welcome to .NET MAUI XAML Controls"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Border></Border>
+
+        <Button Text="Go!"></Button>
+
+        <ImageButton Source="dotnet_bot.svg"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+
+        <StackLayout>
+            <Label Text="What's your favorite animal?" />
+            <RadioButton Content="Cat" />
+            <RadioButton Content="Dog" />
+            <RadioButton Content="Elephant" />
+            <RadioButton Content="Monkey"
+                 IsChecked="true" />
+        </StackLayout>
+
+
+
+        <ActivityIndicator IsRunning="true"  Color="Purple" />
         
+        <ProgressBar Progress="0.7" />
+
+        <Editor
+        Placeholder="Enter your response here"
+        HeightRequest="250" />
     </VerticalStackLayout>
 </ContentPage>
