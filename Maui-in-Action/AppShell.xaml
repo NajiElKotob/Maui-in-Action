@@ -32,6 +32,11 @@
         ContentTemplate="{DataTemplate local:TextToSpeechPage}"
         Route="TextToSpeechPage" />
 
+        <ShellContent
+        Title="Share Text and Links"
+        ContentTemplate="{DataTemplate local:ShareTextAndLinksPage}"
+        Route="ShareTextAndLinksPage" />
+        
     </TabBar>
 
 
