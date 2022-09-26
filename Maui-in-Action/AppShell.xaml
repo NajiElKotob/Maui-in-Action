@@ -21,9 +21,12 @@
         Title="QR"
         ContentTemplate="{DataTemplate local:QRGeneratorPage}"
         Route="QRGeneratorPage" />
-        
-        
-        
+
+        <ShellContent
+        Title="XAML Controls"
+        ContentTemplate="{DataTemplate local:XAMLControlsPage}"
+        Route="XAMLControlsPage" />
+
 
     </TabBar>
 

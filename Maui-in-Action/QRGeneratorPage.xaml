@@ -2,13 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Maui_in_Action.QRGeneratorPage"
-             Title="QRGeneratorPage">
+             Title="QR Generator">
     <VerticalStackLayout>
         <Label 
             Text="QR Generator"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             FontSize="Large"/>
+        
         <VerticalStackLayout Margin="100,10,100,10">
             <Entry x:Name="UrlEntry" Placeholder="" Text="https://www.microsoft.com" />
             <Button x:Name="GenerateQRButton" Text="Generate QR" Clicked="GenerateQRButton_Clicked"  />
