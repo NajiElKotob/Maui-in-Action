@@ -37,6 +37,11 @@
         ContentTemplate="{DataTemplate local:ShareTextAndLinksPage}"
         Route="ShareTextAndLinksPage" />
         
+        <ShellContent
+        Title="Navigation"
+        ContentTemplate="{DataTemplate local:NavigationPage}"
+        Route="NavigationPage" />        
+        
     </TabBar>
 
 

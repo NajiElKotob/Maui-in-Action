@@ -1,8 +1,21 @@
-﻿namespace Maui_in_Action;
+﻿
 
+namespace Maui_in_Action;
+
+
+[QueryProperty(nameof(Param), "p")]
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+
+    public string Param
+    {
+        set
+        {
+            HelloWorldLabel.Text = value;
+        }
+    }
+
+    int count = 0;
 
 	public MainPage()
 	{

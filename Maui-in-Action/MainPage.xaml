@@ -17,6 +17,7 @@
                 HorizontalOptions="Center" />
 
             <Label
+                x:Name="HelloWorldLabel"
                 Text="Hello, World!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
