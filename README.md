@@ -1,6 +1,8 @@
 # Maui in Action
 
 ## Docs
+* [Pages](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/#pages)
+* [Layout](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/#layouts)
 * [Views](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/#views)
 
 ## Articles
