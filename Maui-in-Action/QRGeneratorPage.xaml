@@ -7,14 +7,18 @@
         <Label 
             Text="QR Generator"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Entry x:Name="UrlEntry" Placeholder="" Text="https://www.microsoft.com" />
-        <Button x:Name="GenerateQRButton" Text="Generate QR" Clicked="GenerateQRButton_Clicked"  />
+            HorizontalOptions="Center"
+            FontSize="Large"/>
+        <VerticalStackLayout Margin="100,10,100,10">
+            <Entry x:Name="UrlEntry" Placeholder="" Text="https://www.microsoft.com" />
+            <Button x:Name="GenerateQRButton" Text="Generate QR" Clicked="GenerateQRButton_Clicked"  />
+        </VerticalStackLayout>
 
-
-        <Image x:Name="QrImage" Source="" />
-        <Label x:Name="StatusLabel"
-            Text=""
-             />
+        <!--
+        Image 
+        https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/image
+        -->
+        <Image x:Name="QrImage" Source=""  />
+       
     </VerticalStackLayout>
 </ContentPage>

@@ -7,11 +7,19 @@ public partial class QRGeneratorPage : ContentPage
 	public QRGeneratorPage()
 	{
 		InitializeComponent();
-	}
+        SizeChanged += QRGeneratorPageSizeChanged;  
+    }
 
-	private void GenerateQRButton_Clicked(object sender, EventArgs e)
+    private void QRGeneratorPageSizeChanged(object sender, EventArgs e)
+    {
+        //Adaptive UI with Xamarin.Forms https://devblogs.microsoft.com/xamarin/adaptive-ui-xamarin-forms/
+        QrImage.WidthRequest = Math.Min(this.Width, 400);
+    }
+
+    private void GenerateQRButton_Clicked(object sender, EventArgs e)
 	{
         // Displaying Base64 encoded image in Xamarin.Forms https://blog.mzikmund.com/2018/01/displaying-base64-encoded-image-in-xamarin-forms/
+        // Load Image from a Stream https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/image#load-an-image-from-a-stream
         Stream stream = new MemoryStream(GenerateQR(UrlEntry.Text.Trim()));
         var imageSource = ImageSource.FromStream(() => stream);
         QrImage.Source = imageSource;
