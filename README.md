@@ -1,5 +1,7 @@
 # Maui in Action
 
+## Docs
+* [Views](https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/#views)
 
 ## Articles
 * [Adaptive UI with Xamarin.Forms](https://devblogs.microsoft.com/xamarin/adaptive-ui-xamarin-forms/)
