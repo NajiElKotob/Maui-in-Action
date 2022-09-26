@@ -26,7 +26,11 @@
         Title="XAML Controls"
         ContentTemplate="{DataTemplate local:XAMLControlsPage}"
         Route="XAMLControlsPage" />
-
+        
+        <ShellContent
+        Title="Text-to-Speech"
+        ContentTemplate="{DataTemplate local:TextToSpeechPage}"
+        Route="TextToSpeechPage" />
 
     </TabBar>
 
