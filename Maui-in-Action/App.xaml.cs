@@ -1,4 +1,6 @@
-﻿namespace Maui_in_Action;
+﻿using MauiApp1;
+
+namespace Maui_in_Action;
 
 public partial class App : Application
 {
@@ -11,6 +13,6 @@ public partial class App : Application
         //MainPage = new Tabbed_Page();
         //MainPage = new NavigationPage(new Tabbed_Page());
 
-        MainPage = new ScrollViewPage();
+        MainPage = new DataBindingBasicsPage();
     }
 }
