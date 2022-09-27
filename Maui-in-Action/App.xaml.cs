@@ -9,6 +9,8 @@ public partial class App : Application
         //MainPage = new AppShell();
 
         //MainPage = new Tabbed_Page();
-        MainPage = new NavigationPage(new Tabbed_Page());
+        //MainPage = new NavigationPage(new Tabbed_Page());
+
+        MainPage = new ScrollViewPage();
     }
 }
