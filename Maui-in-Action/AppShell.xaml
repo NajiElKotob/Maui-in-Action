@@ -11,7 +11,7 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />-->
     
-    <TabBar Route="Main">
+    <TabBar>
         <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -39,9 +39,13 @@
         
         <ShellContent
         Title="Navigation"
-        ContentTemplate="{DataTemplate local:NavigationPage}"
-        Route="NavigationPage" />        
-        
+        ContentTemplate="{DataTemplate local:ShellNavigationPage}"
+        Route="ShellNavigationPage" />
+
+        <ShellContent
+        Title="Tabbed Page"
+        ContentTemplate="{DataTemplate local:Tabbed_Page}"
+        Route="Tabbed_Page" />
     </TabBar>
 
 

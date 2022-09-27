@@ -1,8 +1,8 @@
 namespace Maui_in_Action;
 
-public partial class NavigationPage : ContentPage
+public partial class ShellNavigationPage : ContentPage
 {
-	public NavigationPage()
+	public ShellNavigationPage()
 	{
 		InitializeComponent();
 	}

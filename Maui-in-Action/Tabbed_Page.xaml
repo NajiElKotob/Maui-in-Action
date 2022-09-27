@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Maui_in_Action"
+             x:Class="Maui_in_Action.Tabbed_Page"
+             Title="TabbedPage"
+             
+             UnselectedTabColor="Gray"
+             BarBackgroundColor="Azure"
+            
+            >
+    <!--https://learn.microsoft.com/en-us/dotnet/maui/user-interface/pages/tabbedpage-->
+
+    <local:MainPage Title="Home" />
+    <local:QRGeneratorPage />
+    <local:TextToSpeechPage />
+
+    <ContentPage BackgroundImageSource="headset_yellow.jpg" Title="Background">
+        <Label Text="Listen!" />
+
+    </ContentPage>
+    <ContentPage Title="Empty">
+    </ContentPage>
+</TabbedPage>

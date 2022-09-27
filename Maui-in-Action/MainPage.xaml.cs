@@ -7,7 +7,9 @@ namespace Maui_in_Action;
 public partial class MainPage : ContentPage
 {
 
-    public string Param
+
+
+	public string Param
     {
         set
         {
@@ -20,6 +22,7 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
+		
 	}
 
 	private void OnCounterClicked(object sender, EventArgs e)

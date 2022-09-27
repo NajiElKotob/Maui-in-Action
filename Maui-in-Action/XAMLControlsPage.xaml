@@ -13,7 +13,7 @@
 
         <Button Text="Go!"></Button>
 
-        <ImageButton Source="dotnet_bot.svg"
+        <ImageButton Source="dotnet_bot.png"
                     HorizontalOptions="Center"
                     VerticalOptions="Center" />
 

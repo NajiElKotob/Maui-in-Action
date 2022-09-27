@@ -49,6 +49,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\headset_yellow.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Folder Include="Components\" />
 	</ItemGroup>
 
@@ -57,13 +61,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="NavigationPage.xaml">
+	  <Compile Update="ShellNavigationPage.xaml.cs">
+	    <DependentUpon>ShellNavigationPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Tabbed_Page.xaml.cs">
+	    <DependentUpon>Tabbed_Page.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="CarouselControlPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ScrollViewPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ShellNavigationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="QRGeneratorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ShareTextAndLinksPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Tabbed_Page.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="TextToSpeechPage.xaml">
