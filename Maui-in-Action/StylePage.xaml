@@ -8,7 +8,7 @@
                TargetType="Label">
         <Setter Property="HorizontalOptions" Value="Center" />
         <Setter Property="VerticalOptions" Value="Center" />
-        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontSize" Value="28" />
         <Setter Property="TextColor" Value="Red" />
     </Style>
        </ContentPage.Resources>
@@ -22,10 +22,16 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Label Text="Red label"
+        <Label Text="Red label 1"
                Style="{StaticResource labelRedStyle}" />
 
+        <Label Text="Red label 2"
+               Style="{StaticResource labelRedStyle}" />
+        
         <Label Text="Blue label"
                Style="{StaticResource labelBlueStyle}" />
+        
+        
+        
     </VerticalStackLayout>
 </ContentPage>

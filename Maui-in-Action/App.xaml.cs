@@ -8,12 +8,16 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-        //MainPage = new AppShell();
+        MainPage = new AppShell();
 
         //MainPage = new Tabbed_Page();
         //MainPage = new NavigationPage(new Tabbed_Page());
 
         //MainPage = new DataBindingBasicsPage();
-        MainPage = new StylePage();
+        //MainPage = new ScrollViewPage();
+        //MainPage = new CarouselControlPage();
+        //MainPage = new StylePage();
+
+        //MainPage = new ShellNavigationPage();
     }
 }

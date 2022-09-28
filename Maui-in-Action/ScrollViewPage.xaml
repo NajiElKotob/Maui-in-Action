@@ -5,7 +5,7 @@
               xmlns:local="clr-namespace:Maui_in_Action"
              Title="ScrollViewPage">
     <ScrollView x:Name="NamedColorScrollView" Margin="20">
-        <StackLayout BindableLayout.ItemsSource="{x:Static local:NamedColor.All}">
+    <StackLayout BindableLayout.ItemsSource="{x:Static local:NamedColor.All}">
             <BindableLayout.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Orientation="Horizontal">

@@ -5,10 +5,11 @@
              Title="DataBindingBasicsPage">
 
     <!--https://learn.microsoft.com/en-us/dotnet/maui/xaml/fundamentals/data-binding-basics-->
-    <StackLayout VerticalOptions="Center">
+    <StackLayout VerticalOptions="Center" 
+                 BindingContext="{x:Reference slider}">
         <Label Text="ROTATION"
-               BindingContext="{x:Reference slider}"
-               Rotation="{Binding Path=Value}"
+              
+               Rotation="{Binding Value}"
                FontAttributes="Bold"
                FontSize="18"
                HorizontalOptions="Center"
@@ -16,8 +17,9 @@
         <Slider x:Name="slider"
                 Maximum="360"
                 VerticalOptions="Center" />
-        <Label BindingContext="{x:Reference slider}"
-               Text="{Binding Value, StringFormat='The angle is {0:F0} degrees'}"
+        <Label 
+            
+               Text="{Binding Value, StringFormat='The angle is {0:F2} degrees'}"
                FontAttributes="Bold"
                FontSize="18"
                HorizontalOptions="Center"
