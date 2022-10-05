@@ -8,7 +8,7 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-        MainPage = new AppShell();
+        //MainPage = new AppShell();
 
         //MainPage = new Tabbed_Page();
         //MainPage = new NavigationPage(new Tabbed_Page());
@@ -19,5 +19,6 @@ public partial class App : Application
         //MainPage = new StylePage();
 
         //MainPage = new ShellNavigationPage();
+        MainPage = new CarouselViewPage();
     }
 }

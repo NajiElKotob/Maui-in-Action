@@ -54,9 +54,11 @@
 
 	<ItemGroup>
 	  <Folder Include="Components\" />
+	  <Folder Include="Json\" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
 	  <PackageReference Include="QRCoder" Version="1.4.3" />
 	</ItemGroup>
 
@@ -71,6 +73,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="CarouselControlPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="CarouselViewPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="DataBindingBasicsPage.xaml">
